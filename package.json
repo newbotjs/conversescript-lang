@@ -1,0 +1,41 @@
+{
+    "name": "conversescript-lang",
+    "displayName": "ConverseScript Lang",
+    "description": "Syntax hightlight for ConverseScript (conversational script for NewBot Framework) ",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "publisher": "ConverseScript",
+    "scripts": {
+        "vscode:publish": "npx vsce package && npx vsce publish"
+    },
+    "contributes": {
+        "languages": [
+            {
+                "id": "converse",
+                "aliases": [
+                    "ConverseScript",
+                    "conversescript"
+                ],
+                "extensions": [
+                    ".converse"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "converse",
+                "scopeName": "source.converse",
+                "path": "./syntaxes/conversescript.tmLanguage.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "vsce": "^1.71.0"
+    }
+}
