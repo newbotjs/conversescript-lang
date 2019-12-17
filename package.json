@@ -1,6 +1,6 @@
 {
-    "name": "conversescript-lang",
-    "displayName": "ConverseScript Lang",
+    "name": "ConverseScript",
+    "displayName": "ConverseScript",
     "description": "Syntax hightlight for ConverseScript (conversational script for NewBot Framework) ",
     "version": "1.0.0",
     "engines": {
@@ -9,9 +9,11 @@
     "categories": [
         "Programming Languages"
     ],
-    "publisher": "ConverseScript",
+    "repository": "https://github.com/newbotjs/conversescript-lang",
+    "publisher": "sam0552",
     "scripts": {
-        "vscode:publish": "npx vsce package && npx vsce publish"
+        "vscode:publish": "npx vsce package && npx vsce publish",
+        "vscode:login": "npx vsce login ConverseScript"
     },
     "contributes": {
         "languages": [
